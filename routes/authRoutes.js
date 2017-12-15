@@ -17,11 +17,20 @@ module.exports = app => {
 				res.redirect("/auth/google"); // redirect them back to the login page
 			} else {
 				// Handle other errors here
-				console.log(err)
+				console.log(err);
 			}
 		},
 		(req, res) => {
 			res.redirect("/surveys");
 		}
 	);
+
+	app.get("/api/logout", (req, res) => {
+		req.logout();
+		res.send(req.user);
+	});
+
+	app.get("/api/current_user", (req, res) => {
+		res.send(req.user);
+	});
 };
