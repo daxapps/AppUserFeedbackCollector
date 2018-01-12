@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/daxapps/AppUserFeedbackCollector#readme",
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "cookie-session": "^2.0.0-beta.3",
@@ -33,6 +34,7 @@
     "nodemon": "^1.12.7",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "sendgrid": "^5.2.3",
     "stripe": "^5.4.0"
   }
 }
